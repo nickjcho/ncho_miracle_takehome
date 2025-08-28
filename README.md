@@ -42,7 +42,6 @@ That said, I'm happy to further discuss my thought process, as well as any feedb
 ## How to run
 
  - Clone the repository
- - cd into `charts`
  - `npm install` to install dependencies (may need run with `--legacy-peer-deps` as I did previously download a deprecated drag-n-drop library, but I believe I should have removed it from the dependencies).
  - `npm run dev`
  - Go to http://localhost:3000 to view the project
