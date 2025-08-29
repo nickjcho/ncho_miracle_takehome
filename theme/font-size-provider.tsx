@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useContext, useState, ReactNode, useMemo } from "react";
-import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material";
 
 type FontSize = "normal" | "large";
 
@@ -34,7 +34,6 @@ const FontSizeProvider = ({ children }: { children: ReactNode }) => {
   return (
     <FontSizeContext.Provider value={{ fontSize, toggleFontSize }}>
       <ThemeProvider theme={theme}>
-        <CssBaseline />
         {children}
       </ThemeProvider>
     </FontSizeContext.Provider>

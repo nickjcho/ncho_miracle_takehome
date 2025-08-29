@@ -1,12 +1,12 @@
 "use client";
-import { Box } from "@mui/material";
+import { CssBaseline, Box } from "@mui/material";
 import FontSizeProvider from "../../theme/font-size-provider";
 import FontSizeToggle from "../../ui/font-size-toggle";
 import Sidebar from "../../ui/sidebar";
 
-// Contains overlay that contains font size toggle and trial refresh button
-const ClientLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
+const ClientLayout = ({ children }: { children: React.ReactNode }) => (
+  <>
+    <CssBaseline />
     <FontSizeProvider>
       <FontSizeToggle />
       <Box sx={{ display: "flex", minHeight: "100vh" }}>
@@ -24,7 +24,7 @@ const ClientLayout = ({ children }: { children: React.ReactNode }) => {
         </Box>
       </Box>
     </FontSizeProvider>
-  );
-};
+  </>
+);
 
 export default ClientLayout;
